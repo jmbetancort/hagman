@@ -7,16 +7,38 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-        <h1>El Juego del Ahorcado</h1>
-        <h4>Vidas</h4>
-        <div class="lives">
+        <div class="user">
+            <div class="loaduser">
+                <p>Usuario</p>
+                <input class="nameuser" type="text"><br>
+                <p>Contraseña</p>
+                <input class="passuser" type="password"><br>
+                <p>Mode Game</p>
+                <input class="modegame" id="oneplayer" type="radio" name="modegame" value="oneplayer" checked> One Player
+                <input class="modegame" id="multi" type="radio" name="modegame" value="multiplayer"> Multiplayers<br>
+                <span class="btn-login">Login</span>
+            </div>
         </div>
-        <div class="letters">
+        <div class="game">
+            <h1>El Juego del Ahorcado</h1>
+            <h4>Vidas</h4>
+            <div class="lives">
+            </div>
+            <div class="letters">
+            </div>
+            <div class="word">
+            </div>
+            <div class="fullword">
+                <input id="fullletters" type="text" name="fullletters">
+                <span class="btn-check">Check</span>
+            </div>
+            <div class="clues">
+            </div>
+            <div class="anim">
+            </div>
+            <span class="btn-newgame">New Game<span>
         </div>
-        <div class="word">
-        </div>
-        <div class="anim">
-        </div>
-    <script src="juego.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script src="juego.js"></script>
     </body>
 </html>
